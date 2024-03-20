@@ -12,12 +12,15 @@ void Nhap(float arr[], int n)
 void timCan(float arr[], int n)
 {
     float b[10];
-    int count = 0, m, tmp = 0;
+    int count = 0, m;
     for (int i = 0; i <= n; i++) {
         if (arr[i] < 0) {
-            b[count] = arr[i];
-            count++;
+            b[count++] = arr[i];
         }
+    }
+    if (count == 0) {
+        printf("Phuong trinh khong co nghiem duong\n");
+        return;
     }
     float a = fabs(b[0]);
     for (int i = 0; i < count; i++) {
@@ -29,13 +32,8 @@ void timCan(float arr[], int n)
     for (int i = 0; i <= n; i++) {
         if (arr[i] < 0) {
             m = i;
-            tmp = 1;
             break;
         }
-    }
-    if (tmp == 0) {
-        printf("Phuong trinh khong co nghiem duong\n");
-        return;
     }
     
     float N = 1 + (float) pow(a/arr[0], 1.0/m);
