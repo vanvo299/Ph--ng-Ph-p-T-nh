@@ -23,7 +23,7 @@ float f(float x)
 	}
 	return value;
 }
-
+// hàm tìm nghiệm chính xác bằng phương pháp chia đôi
 void chinhXacHoaNghiem(float a, float b)
 {
     do {
