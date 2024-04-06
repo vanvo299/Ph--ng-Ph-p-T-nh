@@ -14,8 +14,8 @@ int PPdayCung(float (*f)(float), float a, float b, float *q)
 {
     float x;
     int count = 0;
-    printf("     a      b      x     f(x) \n");
-    printf("------------------------------\n");
+    printf("       a           b           x          f(x) \n");
+    printf("--------------------------------------------------\n");
     while(count < MAX_COUNT)
     {
         x = a - ((b - a) * f(a)) / (f(b) - f(a));
