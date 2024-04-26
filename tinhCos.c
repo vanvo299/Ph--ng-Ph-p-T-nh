@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <limits.h>
 #define EPS 1e-6
 double tinh_Cos(double x)
 {
@@ -18,7 +19,7 @@ int main()
     double x;
     printf("Nhap x (radian): ");
     scanf("%lf", &x);
-    x = (x * M_PI) / 180;
+        x = (x * M_PI) / 180;
     printf("cos(%.2lf) = %.2lf\n", x, tinh_Cos(x));
     printf("COS(%.2lf) = %.2lf\n", x, cos(x));
     return 0;
