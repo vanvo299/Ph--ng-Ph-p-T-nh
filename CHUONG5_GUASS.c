@@ -75,7 +75,7 @@ void timnghiem(float a[][max], int n)
     } 
 
     for (int i = 1; i <= n; i++) {
-        printf("x%d = %.2f\t", i, x[i]);
+        printf("x%d = %.3f\t", i, x[i]);
     }
 }
 int main()
