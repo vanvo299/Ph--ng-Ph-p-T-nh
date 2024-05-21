@@ -6,7 +6,8 @@ const int MAX_COUNT = 1000;
 float f(float x)
 {
     // float result = pow(2, x) + x - 4;
-    float result = pow(x, 4) - 4 * x - 1;
+    // float result = pow(x, 4) - 4 * x - 1;
+    float result = pow(x, 3) + x - 5;
     return result;
 }
 
